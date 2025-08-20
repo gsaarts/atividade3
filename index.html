@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastrar usuário</h1>
+    <form action="form.php" method="get">
+        <fieldset>
+            <legend>1 Dados pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="" id="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="" id="email">
+            
+            <label for="senha">Senha</label>
+            <input type="password" name="" id="senha">
+
+            <label for="confirmSenha">Confirmar Senha</label>
+            <input type="password" name="" id="confirmSenha"><br>
+            
+            <label for="">Idade:</label>
+
+            <input type="radio" name="idade" id="acima17" value="AcimaDe17">
+            <label for="acima17">Acima 17</label>
+
+            <input type="radio" name="idade" id="abaixo17" value="AbaixoOuIgual17">
+            <label for="abaixo17">Abaixo ou igual a 17</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>2 Perfil</legend>
+            
+            <label for="descricao">Descrição:</label>
+            <textarea name="txtDescrição" id="descricao"></textarea>
+
+            <label for="">Perfil trabalho:</label>
+            <select name="perfilTrabalho" id="">
+                <option value="frontEnd">Front-End Developer</option>
+                <option value="backEnd">Back-End Developer</option>
+                <option value="prototipador">Prototipador</option>
+            </select><br>
+
+            <label for="">Interesses:</label>
+
+            <input type="checkbox" name="interesse1" id="program" value="programador">
+            <label for="program">Programador</label>
+            
+            <input type="checkbox" name="interesse2" id="desi" value="design">
+            <label for="desi">Design</label>
+
+            <input type="checkbox" name="interesse3" id="anali" value="analista">
+            <label for="anali">Analista</label>
+        </fieldset>
+
+        <input type="submit" value="Enviar dados">
+    </form>
+</body>
+</html>
